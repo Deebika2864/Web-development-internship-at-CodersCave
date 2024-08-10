@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My E-Commerce Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home"><span style="color: lawngreen;">Home</span></a></li>
+                <li><a href="#products"><span style="color: lawngreen;">Products</span></a></li>
+                <li><a href="#cart"><span style="color: lawngreen;">Cart</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2><span style="color: lawngreen;">Welcome to Our Store</span></h2>
+        <p>Browse our wide selection of products and add them to your cart!</p>
+    </section>
+
+    <section id="products">
+        <h2><span style="color: lawngreen;">Products</span></h2>
+        <div class="product-list">
+            <div class="product-item">
+                <div>
+                    <img id="Img_p1" src="\NLA_StoryTimeStars_cover.jpg.crdownload" class="ProductsLst">
+                </div>
+                <h3>Product 1</h3>
+                <p>Price: ₹300</p>
+                <button class="add-to-cart" data-name="Product 1" data-price="300">Add to Cart</button>
+            </div>
+            <div class="product-item">
+                <div>
+                    <img id="Img_p2" src="secrets-of-success.jpg" class="ProductsLst">
+                </div>
+                <h3>Product 2</h3>
+                <p>Price: ₹350</p>
+                <button class="add-to-cart" data-name="Product 2" data-price="350">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2><span style="color: lawngreen;">Your Cart</span></h2>
+        <div id="cart-items"></div>
+        <p id="total">Total: ₹0</p>
+        <button id="checkout">Checkout</button>
+    </section>
+
+    <footer>
+        <p id="footertxt">&copy; 2024 My <span style="color: lawngreen;">E-Commerce Store</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
